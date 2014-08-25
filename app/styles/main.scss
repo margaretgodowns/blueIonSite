@@ -1,0 +1,44 @@
+body{
+  background: url('../images/bodyImage.png');
+  background-attachment: fixed;
+
+  .logo{
+    margin: auto 0;
+    padding: 0px;
+  }
+
+  .container-fluid{
+    padding-left: 150px;
+    padding-right: 150px;
+
+    .carousel{
+    border: 8px solid white;
+
+      .carousel-control{
+        display: none;
+      }
+
+      .carousel-indicators{
+      bottom: -50px;
+
+        .active{
+          background-color: red;
+          border: 4px solid white;
+        }
+      }
+
+      .item{
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 auto;
+      }
+
+      .active{
+      margin: 0 auto;
+      }
+
+    }
+
+  }
+
+}
