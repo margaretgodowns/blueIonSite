@@ -1,10 +1,16 @@
 body{
   background: url('../images/bodyImage.png');
   background-attachment: fixed;
+  border: 2px solid red;
+
 
   .logo{
     margin: auto 0;
     padding: 0px;
+    position: absolute;
+    z-index: 1;
+    top: 75px;
+    left: 175px;
   }
 
   .container-fluid{
@@ -12,14 +18,14 @@ body{
     padding-right: 150px;
 
     .carousel{
-    border: 8px solid white;
+      border: 8px solid white;
 
       .carousel-control{
         display: none;
       }
 
       .carousel-indicators{
-      bottom: -50px;
+        bottom: -50px;
 
         .active{
           background-color: red;
@@ -28,17 +34,53 @@ body{
       }
 
       .item{
-      width: 100%;
-      margin: 0 auto;
-      padding: 0 auto;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 auto;
       }
 
       .active{
-      margin: 0 auto;
+        margin: 0 auto;
       }
 
     }
 
   }
 
+  .row{
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 2px solid red;
+
+    .col-md-4{
+      border: 2px solid red;
+      .newsPost{
+        font-family: 'PT Sans', sans-serif;
+        text-align: left;
+        padding: 8%;
+        line-height: 140%;
+        letter-spacing: .02em;
+        background: white;
+        .postTitle{
+          font-size: 1.4em;
+          color: rgb(54, 55, 49);
+        }
+        .postDate{
+          font-size: .9em;
+          color: rgb(165, 165, 165);
+        }
+        .actualPost{
+          font-size: .8em;
+          color: rgb(84, 84, 84);
+        }
+        .readMore{
+          text-decoration: none;
+          text-align: center;
+          a{
+            color: rgb(180, 40, 46);
+          }
+        }
+      }
+    }
+  }
 }
