@@ -46,6 +46,9 @@ body{
     }
 
   }
+  .row{
+    text-align: center;
+  }
 
   .row{
     margin: 0 auto;
@@ -61,6 +64,7 @@ body{
         line-height: 140%;
         letter-spacing: .02em;
         background: white;
+        height: 100%;
         .postTitle{
           font-size: 1.4em;
           color: rgb(54, 55, 49);
@@ -80,6 +84,10 @@ body{
             color: rgb(180, 40, 46);
           }
         }
+
+      }
+      #third{
+        border-bottom: 3px solid white;
       }
     }
   }
