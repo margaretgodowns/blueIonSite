@@ -4,29 +4,91 @@ body{
   // padding-left: 5%;
   // padding-right: 5%;
   //border: 2px solid red;
-  .navBar{
-    background: rgb(234, 28, 43);
-    // margin: 1px;
-  .navClick{
-
+  .row{
+    margin: 0 auto;
+    margin-top: 3%;
   }
-}
-
-  .logo{
-    margin: auto 0;
-    padding: 0px;
-    position: absolute;
-    z-index: 1;
-    top: 5%;
-    left: 2%;
-  }
-
   .container-fluid{
     padding-left: 150px;
     padding-right: 150px;
 
+    .icons{
+      float: right;
+      a{
+        font-family: 'PT Sans', sans-serif;
+        text-decoration: none;
+        color: white;
+      }
+      .iconImg{
+        opacity: .8;
+        :hover{
+          opacity: 1;
+        }
+      }
+    }
+.navClick {
+    color: #fff;
+    text-decoration: none;
+    & :hover {
+      color: green;
+      text-decoration: strikethrough;
+    }
+  }
+  a {
+    color: #fff;
+    text-decoration:none;
+  }
+  a:hover {
+    color:green;
+    text-decoration: strikethrough;
+  }
+    .topMenu {
+      margin: 0;
+      padding: 0;
+
+
+      li {
+        display: inline-block;
+        width:23  %;
+        font-family: 'PT Sans', sans-serif;
+            font-size: 1.3em;
+            color: white;
+            background: rgb(234, 28, 43);
+            padding-top: 3%;
+            padding-bottom: 3%;
+
+        }
+
+
+      }
+    }
+
+    // .fullNav{
+    //   .margin-top: 2%;
+    //   a:hover{
+    //     text-decoration: none;
+    //   }
+    //   .navClick{
+    //     font-family: 'PT Sans', sans-serif;
+    //     font-size: 1.3em;
+    //     color: white;
+    //     background: rgb(234, 28, 43);
+    //     padding-top: 3%;
+    //     padding-bottom: 3%;
+    //
+    //   }
+    // }
+
     .carousel{
       border: 8px solid white;
+      .logo{
+        margin: auto 0;
+        padding: 0px;
+        position: absolute;
+        z-index: 1;
+        top: 5%;
+        left: 2%;
+      }
       .carousel-inner{
         img{
           margin: 0 auto;
@@ -39,7 +101,7 @@ body{
       }
 
       .carousel-indicators{
-        bottom: -50px;
+        bottom: -12%;
 
         .active{
           background-color: red;
@@ -58,79 +120,129 @@ body{
       }
 
     }
-
-  }
-  .row{
-    .boardBro{
-      border: 6px solid white;
-    }
-    text-align: center;
-    #tommyImg{
-      margin-top: 0px;
-      .col-md-12{
-        img{
-          padding: 0px;
-          text-align: left;
-        }
-      }
-    }
-    .col-md-8{
-      margin-top: -21%;
-      // padding: 0;
-      img{
-        width: 100%;
-      }
-    }
-  }
-
-  .boards{
-    background: white;
-    img{
-      padding-left: 1.6%;
-      padding-right: 1.6%;
-      padding-top: 1%;
-      padding-bottom: 1%;
-    }
-  }
-
-  .row{
-    margin: 0 auto;
-    margin-top: 50px;
-    //border: 2px solid red;
-
-    .col-md-4{
+    .news{
+      margin: 0 auto;
+      margin-top: 3%;
+      height: 415px;
       //border: 2px solid red;
-      .newsPost{
-        font-family: 'PT Sans', sans-serif;
-        text-align: left;
-        padding: 8%;
-        line-height: 140%;
-        letter-spacing: .02em;
-        background: white;
-        height: 100%;
-        .postTitle{
-          font-size: 1.4em;
-          color: rgb(54, 55, 49);
+
+      .col-md-4{
+        //border: 2px solid red;
+        .newsPost{
+          font-family: 'PT Sans', sans-serif;
+          text-align: left;
+          padding: 8%;
+          line-height: 140%;
+          letter-spacing: .02em;
+          background: white;
+          height: 320px;
+          overflow: hidden;
+          .postTitle{
+            font-size: 1.4em;
+            color: rgb(54, 55, 49);
+          }
+          .postDate{
+            font-size: .9em;
+            color: rgb(165, 165, 165);
+          }
+          .actualPost{
+            font-size: .8em;
+            color: rgb(84, 84, 84);
+          }
+          .readMore{
+            text-decoration: none;
+            text-align: center;
+            a{
+              color: rgb(180, 40, 46);
+            }
+          }
+
         }
-        .postDate{
-          font-size: .9em;
-          color: rgb(165, 165, 165);
+        #third{
+          border-bottom: 3px solid white;
         }
-        .actualPost{
-          font-size: .8em;
-          color: rgb(84, 84, 84);
-        }
-        .readMore{
-          text-decoration: none;
-          text-align: center;
-          a{
-            color: rgb(180, 40, 46);
+      }
+    }
+
+
+    .skateboarders{
+      .boardBro{
+        border: 6px solid white;
+      }
+      .col-md-4{
+        font-size: 2em;
+      }
+      .name{
+        margin-top: -125px;
+        text-decoration: none;
+        color: white;
+        font-size: 1.5em;
+      }
+      text-align: center;
+      #tommyImg{
+        margin-top: 0px;
+        .col-md-12{
+          img{
+            padding: 0px;
+            text-align: left;
           }
         }
-
       }
-      #third{
-        border-bottom: 3px solid white;
+      .col-md-8{
+        margin-top: -21%;
+        // padding: 0;
+        img{
+          width: 100%;
+        }
+      }
+    }
+
+    .boards{
+      background: white;
+      text-align: center;
+      img{
+        padding-left: 1.6%;
+        padding-right: 1.6%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+      }
+    }
+
+
+    .contactUs{
+      background-color:white;
+      padding: 2%;
+      .contactPrompt{
+        h2{
+          font-family: 'PT Sans', sans-serif;
+          color: rgb(54, 55, 49);
+        }
+      }
+      .contactForm{
+        input{
+          border-top: 4px  solid rgb(165, 165, 165);
+          border-left: 4px solid rgb(165, 165, 165);
+        }
+        textarea{
+          border-top: 4px solid rgb(165, 165, 165);
+          border-left: 4px solid rgb(165, 165, 165);
+        }
+        button{
+          color: white;
+          border-radius: 0%;
+          opacity: 1;
+          margin-top: 5%;
+          padding-left: 10%;
+          padding-right: 10%;
+          float: right;
+        }
+      }
+    }
+    .footer{
+      text-align: center;
+      padding: 2%;
+      img{
+        opacity: .4;
       }
     }
   }
