@@ -1,16 +1,24 @@
 body{
   background: url('../images/bodyImage.png');
   background-attachment: fixed;
-  border: 2px solid red;
+  // padding-left: 5%;
+  // padding-right: 5%;
+  //border: 2px solid red;
+  .navBar{
+    background: rgb(234, 28, 43);
+    // margin: 1px;
+  .navClick{
 
+  }
+}
 
   .logo{
     margin: auto 0;
     padding: 0px;
     position: absolute;
     z-index: 1;
-    top: 75px;
-    left: 175px;
+    top: 5%;
+    left: 2%;
   }
 
   .container-fluid{
@@ -19,6 +27,12 @@ body{
 
     .carousel{
       border: 8px solid white;
+      .carousel-inner{
+        img{
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
 
       .carousel-control{
         display: none;
@@ -47,16 +61,45 @@ body{
 
   }
   .row{
+    .boardBro{
+      border: 6px solid white;
+    }
     text-align: center;
+    #tommyImg{
+      margin-top: 0px;
+      .col-md-12{
+        img{
+          padding: 0px;
+          text-align: left;
+        }
+      }
+    }
+    .col-md-8{
+      margin-top: -21%;
+      // padding: 0;
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .boards{
+    background: white;
+    img{
+      padding-left: 1.6%;
+      padding-right: 1.6%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
   }
 
   .row{
     margin: 0 auto;
     margin-top: 50px;
-    border: 2px solid red;
+    //border: 2px solid red;
 
     .col-md-4{
-      border: 2px solid red;
+      //border: 2px solid red;
       .newsPost{
         font-family: 'PT Sans', sans-serif;
         text-align: left;
