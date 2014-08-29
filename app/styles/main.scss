@@ -15,7 +15,8 @@ body{
     padding-left: 210px;
     padding-right: 210px;
     .social{
-      padding-top: 50px;
+      margin-top: 50px;
+      margin-bottom: 25px;
     .icons{
       float: right;
       a{
@@ -38,7 +39,8 @@ body{
         padding: 0px;
         margin: 0 auto;
         .navItem{
-          margin-right: 7px;
+          margin-right: 5px;
+          border-bottom: 4px solid rgb(165, 165, 165);
       }
       .topMenu{
         text-align: left;
@@ -64,6 +66,8 @@ body{
 
     .carousel{
       border: 8px solid white;
+      margin-bottom: 50px;
+      border-bottom: 4px solid rgb(165, 165, 165);
       .logo{
         margin: auto 0;
         padding: 0px;
@@ -84,7 +88,7 @@ body{
       }
 
       .carousel-indicators{
-        bottom: -15%;
+        bottom: -65px;
 
         .active{
           background-color: red;
@@ -117,15 +121,18 @@ body{
           display:none;
         }
         }
+
         .newsPost{
           font-family: 'PT Sans', sans-serif;
           text-align: left;
           padding: 8%;
+          margin-bottom: 50px;
           line-height: 140%;
           letter-spacing: .02em;
           background: white;
           height: 320px;
           overflow: hidden;
+          border-bottom: 4px solid rgb(165, 165, 165);
 
 
           .postTitle{
@@ -150,7 +157,7 @@ body{
 
         }
         #third{
-          border-bottom: 3px solid white;
+          border-bottom: 4px solid rgb(165, 165, 165);
         }
       }
     }
@@ -158,16 +165,22 @@ body{
 
     .skateboarders{
       margin-top: -70px;
+      margin-bottom: 50px;
       .col-md-8{
         padding: 0px;
       }
       .col-md-6{
         padding-left: 0px;
         padding-top: 0px;
+        opacity: .8;
+        &:hover{
+          opacity: 1;
+        }
         img{
         width: 100%;
         vertical-align: top;
-        border: 6px solid white;
+        border: 4px solid white;
+
         }
         a{
           text-decoration: none;
@@ -182,6 +195,10 @@ body{
       }
       .col-md-4{
         padding: 0px;
+        opacity: .8;
+        &:hover{
+          opacity: 1;
+        }
         img{
           width: 100%;
           border: 4px solid white;
@@ -198,11 +215,16 @@ body{
         }
       }
       .steveDiv{
-        margin-top: -180px;
+        margin-top: -172px;
         padding: 0px;
+        opacity: .8;
+        &:hover{
+          opacity: 1;
+        }
         img{
-            width: 100%;
+            width: 97.5%;
             border: 4px solid white;
+
           }
         a{
           text-decoration: none;
@@ -221,6 +243,7 @@ body{
       background: white;
       text-align: center;
       margin-top: 50px;
+      border-bottom: 4px solid rgb(165, 165, 165);
       img{
         padding: 1%;
       }
@@ -231,6 +254,8 @@ body{
       background-color:white;
       padding: 2%;
       margin-top: 50px;
+      margin-bottom: 50px;
+      border-bottom: 4px solid rgb(165, 165, 165);
       .contactPrompt{
         h2{
           font-family: 'PT Sans', sans-serif;
