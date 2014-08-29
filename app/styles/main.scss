@@ -1,9 +1,13 @@
+
 body{
   background: url('../images/bodyImage.png');
   background-attachment: fixed;
   // padding-left: 5%;
   // padding-right: 5%;
   //border: 2px solid red;
+  .tooltip{
+    text-decoration: underline;
+  }
   .row{
     margin: 0 auto;
   }
@@ -18,12 +22,12 @@ body{
         font-family: 'PT Sans', sans-serif;
         text-decoration: none;
         color: white;
-      }
-      .iconImg{
-        opacity: .8;
         :hover{
           opacity: 1;
         }
+      }
+      .iconImg{
+        opacity: .8;
       }
     }
   }
@@ -47,6 +51,9 @@ body{
         background-color: rgb(218, 24, 41);
         margin: 0px;
         padding: 8px;
+        :hover{
+          text-decoration: none;
+        }
         a{
           color: white;
         }
@@ -103,6 +110,12 @@ body{
 
 
       .col-md-4{
+        &.expand{
+          width: 100%;
+        }
+        .hidden{
+          display:none;
+        }
         }
         .newsPost{
           font-family: 'PT Sans', sans-serif;
@@ -114,12 +127,7 @@ body{
           height: 320px;
           overflow: hidden;
 
-            .hidden{
-              display:none;
-            }
-            .expand{
-              width: 100%;
-            }
+
           .postTitle{
             font-size: 1.4em;
             color: rgb(54, 55, 49);
@@ -150,6 +158,9 @@ body{
 
     .skateboarders{
       margin-top: -70px;
+      .col-md-8{
+        padding: 0px;
+      }
       .col-md-6{
         padding-left: 0px;
         padding-top: 0px;
@@ -170,9 +181,10 @@ body{
         }
       }
       .col-md-4{
+        padding: 0px;
         img{
           width: 100%;
-          border: 6px solid white;
+          border: 4px solid white;
         }
         a{
           text-decoration: none;
@@ -186,11 +198,11 @@ body{
         }
       }
       .steveDiv{
-        margin-top: -169px;
-        padding-right: 28px;
+        margin-top: -180px;
+        padding: 0px;
         img{
             width: 100%;
-            border: 6px solid white;
+            border: 4px solid white;
           }
         a{
           text-decoration: none;

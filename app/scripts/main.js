@@ -1,8 +1,14 @@
 $(document).ready(function(){
 
-  $(".col-md-4").find("a").click(function(){
+  $(".blogSection").find("a").click(function(){
     event.preventDefault();
-    $(this).parent().siblings().toggleClass("hidden");
-  })
+    $(".blogSection").siblings().toggleClass("hidden");
 
+    //if/then statement?
+  });
+
+
+  $(".skateboard").tooltip({
+    "placement":"top",
+  });
 });
